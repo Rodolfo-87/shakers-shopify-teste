@@ -43,10 +43,10 @@
 
 <h2>Como adicionar</h2>
 <div style="display:flex;flex-direction:column">
-    <a target="_blank" href="https://drive.google.com/file/d/1wSEGldB2xPaZGI50RrZxghQikp4qhdZG/view"> 
+    <a href="https://drive.google.com/file/d/1wSEGldB2xPaZGI50RrZxghQikp4qhdZG/view"> 
         <p>Imagem 01 - Admin Shopify, como acessar.</p>
     </a>
-    <a target="_blank" href="https://drive.google.com/file/d/1L8CSm08DPR36mxxEL-g22BJQVqjDBCMb/view?usp=sharing">
+    <a href="https://drive.google.com/file/d/1L8CSm08DPR36mxxEL-g22BJQVqjDBCMb/view?usp=sharing">
         <p> Imagem 02 - Como adicionar imagem e produtos pelo App </p>
     </a>
 </div>
