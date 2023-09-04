@@ -40,6 +40,14 @@
 
 <h3>Observação</h3>
 <p>O lojista pode criar o produto e imagem que quiser acessando o aplicativo ACT - Metafilds Custom Fields. Gratuito.</p>
+<p>No arquivo theme.liquid (arquivo principal) foi adicionado condicional para chamar o snippet lookbook. Segue abaixo: <br />
+    <code>
+        {% if template contains 'index' %}
+            {% include 'lookbook' %}
+        {% endif %}
+    </code>
+</p>
+
 
 <h2>Como adicionar</h2>
 <div style="display:flex;flex-direction:column">
