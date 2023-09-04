@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ 'custom.min.css' | asset_url }}">
+
+{% assign lookbookImage = shop.metafields.lookbook.image %}
+{% assign lookbookProducts = shop.metafields.lookbook.product  | json %}
+{% assign lookbookSize = shop.metafields.lookbook.product | size %}
+
+<section class="lookbook">
+    <div class="lookbook-container">
+        <figure class="lookbook-figure">
+            <img class="lookbook-image" src="{{lookbookImage}}">
+            <div class="lookbook-dots-image">
+                {% for index in (1..lookbookSize) %}
+                        <li> <a class="lookbook-{{ index }}" href="#lookbook-{{ index }}"></a></li> 
+                {% endfor %}
+            </div>
+        </figure>
+        <div class="lookbook-products">
+            <input class="lookbook-data" type="hidden" data-lookbook='{{ lookbookProducts }}' />
+           <div class="lookbook-product"></div>
+           <div class="lookbook-dots-product">
+               {% for index in (1..lookbookSize) %} 
+                    <li><a class="lookbook-{{ index }}-product" href="#lookbook-{{ index }}"></a></li>
+               {% endfor %}
+           </div>                            
+        </div>
+    </div>
+</section>
+
+<script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
