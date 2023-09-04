@@ -5,7 +5,7 @@
 </p>
 <h2>Tecnologia Utilizada:</h2>
 <p>
-    HTML;<br /> CSS (métodologia BEM);<br /> JavaScript (puro); <br /> Liquid (Shopify);<br /> Gulp.
+    HTML;<br /> CSS/SASS (métodologia BEM);<br /> JavaScript (puro); <br /> Liquid (Shopify);<br /> Gulp;
 </p>
 
 <h2>Framework Utilizado:</h2>
