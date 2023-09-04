@@ -1,0 +1,250 @@
+// MIXIN PARA MOBILE ____________________________| inicial |
+@mixin devices($breakpoint) {
+    @if $breakpoint==mobile {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+}
+// MIXIN PARA MOBILE ____________________________| final |
+
+
+.lookbook {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+
+    @include devices(mobile) {
+        .lookbook {
+            max-width: 100%;
+            overflow: initial;
+        }
+    }
+}
+
+.lookbook-container {
+    display: flex;
+    align-items: center;
+
+    @include devices(mobile) {
+        flex-direction: column;
+    }
+
+    @include devices(mobile) {
+        .lookbook-products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.lookbook-figure {
+    position: relative;
+
+    @include devices(mobile) {
+        width: 100%;
+    }
+
+    .lookbook-image {
+        @include devices(mobile) {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.lookbook-product {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #cacaca;
+    overflow: hidden;
+    width: 40%;
+    padding: 70px 0;
+
+    @include devices(mobile) {
+        width: 40%;
+        padding: 20px 0;
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image {
+        width: 320px;
+
+        @include devices(mobile) {
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    &__figure {
+        flex: 1;
+
+        figcaption {
+            text-align: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__add {
+        width: 70%;
+        background: #333;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        margin: 10px 0;
+
+        @include devices(mobile) {
+            font-size: 12px;
+        }
+    }
+
+    &__add {
+        cursor: pointer;
+    }
+}
+
+.lookbook-dots-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 40%;
+
+    li {
+        a {
+            background: #cacaca;
+        }
+
+        &.is-active {
+            >a {
+                background: #333;
+                transform: scale(1.2);
+                transition: all .175s linear;
+            }
+        }
+    }
+}
+
+.lookbook-dots-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;  
+
+    li {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+
+        &:last-child {
+            height: 10%;
+        }        
+
+        a {
+            width: calc(100%/40);
+            height: 14px;
+            background: rgba(0, 0, 0, .5);
+            border-radius: 50%;
+            border: 1px solid transparent;
+            animation: initLinkImageAnimate .2s cubic-bezier(0.17, 0.85, 0.45, 1) forwards;
+            transition: all .175s linear;
+
+            &:hover {
+                border: 1px solid red;
+                background: red;
+                transition: all .175s linear;
+                
+                &::before{
+                    background: rgba(0, 0, 0, .4);
+                }
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 40px;
+                left: -14px;
+                top: -14px;
+                border-radius: 100%;
+                background: rgba(0, 0, 0, .2);
+                animation: 1s stopLinkImageAnimate ease-in-out infinite;
+
+                @include devices(mobile) {                        
+                    width: 25px !important;
+                    height: 25px !important;
+                    left: -8px !important;
+                    top: -7px !important;                    
+                }                  
+            }
+
+            @include devices(mobile) {
+                width: calc(100%/30);
+                height: 11px;
+            }            
+        }
+    }
+}
+
+.lookbook-dots-image li,
+.lookbook-dots-product li {
+    list-style: none;
+}
+
+.lookbook-dots-image li a,
+.lookbook-dots-product li a {
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: block;
+    transition: all .175s linear;
+}
+
+// KEYFRAMES INICIALIZAR E PARAR EVENTO DAS COORDERNADAS____________| inicial |
+@keyframes initLinkImageAnimate {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes stopLinkImageAnimate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+// KEYFRAMES INICIALIZAR E PARAR EVENTO DAS COORDERNADAS____________| final |
