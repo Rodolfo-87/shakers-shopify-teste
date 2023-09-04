@@ -1,0 +1,26 @@
+{
+    "name": "gulpfile",
+    "version": "2.0.0",
+    "description": "Conversão SCSS para CSS",
+    "main": "gulpfile.js",
+    "devDependencies": {
+      "@babel/core": "^7.22.11",
+      "@babel/preset-env": "^7.22.14",
+      "gulp": "^4.0.2",
+      "gulp-babel": "^8.0.0",
+      "gulp-concat-css": "^3.1.0",
+      "gulp-cssnano": "^2.1.3",
+      "gulp-minify": "^3.1.0",
+      "gulp-sass": "^5.1.0",
+      "sass": "^1.66.1"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "gulp watch"
+    },
+    "author": "Rodolfo Ferreira",
+    "license": "ISC",
+    "dependencies": {
+      "gulp-uglify": "^3.0.2"
+    }
+  }
