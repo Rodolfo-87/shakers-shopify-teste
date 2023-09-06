@@ -51,10 +51,10 @@
 
 <h2>Como adicionar</h2>
 <div style="display:flex;flex-direction:column">
-    <a href="https://drive.google.com/file/d/1wSEGldB2xPaZGI50RrZxghQikp4qhdZG/view"> 
+    <a href="https://github.com/Rodolfo-87/shakers-shopify-teste/blob/main/img/img-1.jpg"> 
         <p>Imagem 01 - Admin Shopify, como acessar.</p>
     </a>
-    <a href="https://drive.google.com/file/d/1L8CSm08DPR36mxxEL-g22BJQVqjDBCMb/view?usp=sharing">
+    <a href="https://github.com/Rodolfo-87/shakers-shopify-teste/blob/main/img/img-2.jpg">
         <p> Imagem 02 - Como adicionar imagem e produtos pelo App </p>
     </a>
 </div>
