@@ -58,5 +58,6 @@
         <p> Imagem 02 - Como adicionar imagem e produtos pelo App </p>
     </a>
 </div>
+<h2>Vídeo da Implementação (feat)</h2><br />
 
-
+https://github.com/Rodolfo-87/shakers-shopify-teste/assets/53090730/982fcf06-2b19-4b73-8fa9-35d51d6ae7ce
