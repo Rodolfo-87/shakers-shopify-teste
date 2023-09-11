@@ -53,7 +53,7 @@
     </a>
 </div>
 <h2>Link Vídeo da Implementação (feat)</h2>
-<a href="https://github-production-user-asset-6210df.s3.amazonaws.com/53090730/267086968-73b1898d-a3bd-4042-974c-d6916859e8cf" target="_blank">
-    https://github-production-user-asset-6210df.s3.amazonaws.com/53090730/267086968-73b1898d-a3bd-4042-974c-d6916859e8cf
+<a href="https://github-production-user-asset-6210df.s3.amazonaws.com/53090730/267086968-73b1898d-a3bd-4042-974c-d6916859e8cf">
+    <span> https://github-production-user-asset-6210df.s3.amazonaws.com/53090730/267086968-73b1898d-a3bd-4042-974c-d6916859e8cf </span>
 </a>
 
