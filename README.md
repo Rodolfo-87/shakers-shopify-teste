@@ -7,17 +7,14 @@
 <p>
     HTML;<br /> CSS/SASS (métodologia BEM);<br /> JavaScript (puro); <br /> Liquid (Shopify);<br /> Gulp;
 </p>
-
 <h2>Framework Utilizado:</h2>
 <p>
     Nenhum
 </p>
-
 <h2>Aplicativo Utilizado:</h2>
 <p>
     ACT - Metafilds Custom Fields. Gratuito.
 </p>
-
 <table>
   <tr>
     <th>Funcionalidade</th>
@@ -37,7 +34,6 @@
     </td>
   </tr>
 </table>
-
 <h3>Observação</h3>
 <p>O lojista pode criar o produto e imagem que quiser acessando o aplicativo ACT - Metafilds Custom Fields. Gratuito.</p>
 <p>No arquivo theme.liquid (arquivo principal) foi adicionado condicional para chamar o snippet lookbook. Segue abaixo: <br />
@@ -47,8 +43,6 @@
         {% endif %}
     </code>
 </p>
-
-
 <h2>Como adicionar</h2>
 <div style="display:flex;flex-direction:column">
     <a href="https://github.com/Rodolfo-87/shakers-shopify-teste/blob/main/img/img-1.jpg"> 
@@ -58,6 +52,10 @@
         <p> Imagem 02 - Como adicionar imagem e produtos pelo App </p>
     </a>
 </div>
-<h2>Vídeo da Implementação (feat)</h2><br />
+<h2>Vídeo da Implementação (feat)</h2>
+<a href="https://github.com/Rodolfo-87/shakers-shopify-teste/assets/53090730/73b1898d-a3bd-4042-974c-d6916859e8cf"> 
+    <video width="600" height="340" autoplay>
+        <source src="https://github.com/Rodolfo-87/shakers-shopify-teste/assets/53090730/73b1898d-a3bd-4042-974c-d6916859e8cf" type="video/mp4">
+    </video>
+</a>
 
-https://github.com/Rodolfo-87/shakers-shopify-teste/assets/53090730/982fcf06-2b19-4b73-8fa9-35d51d6ae7ce
